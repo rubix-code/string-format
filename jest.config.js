@@ -3,6 +3,7 @@ module.exports = {
 	preset: "ts-jest",
 	testEnvironment: "node",
 	setupFilesAfterEnv: [
+		"jest-extended/all",
 		"<rootDir>/jest.setup.ts"
 	],
 	"rootDir": "./test",

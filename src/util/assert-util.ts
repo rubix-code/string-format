@@ -6,6 +6,8 @@ import { Class } from "type-fest"
 /**
  * Assert Utility
  *
+ * TODO: move assert to its own package
+ *
  * @see https://github.com/Tiliqua/assert-js/blob/master/src/AssertJS/Assert.js
  * @export
  * @class AssertUtil

@@ -1,5 +1,5 @@
 import { Assert } from "@/util/assert-util"
-import { IStringFormatParser, StringFormatParam, IStringFormatter } from "../StringFormat"
+import { IStringFormatParser, StringFormatParam, IStringFormatter, TStringTransformer } from "../StringFormat"
 
 const TypeErrors = {
 	INTEGER_TYPE_ERROR(value: any) { return new TypeError(`${value} is not an integer`) },
@@ -413,7 +413,7 @@ export default class CStyleFormatter implements IStringFormatter {
 	 * @since 0.1.0
 	 * @throws {Error} if the transformer is not supported
 	 */
-	public addTransformer(): void {
+	public addTransformer(key: string, transformer: TStringTransformer): void {
 		throw new Error(`Transformers functionality is not supported by the C-Style formatter`)
 	}
 

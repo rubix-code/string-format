@@ -104,5 +104,8 @@
 		"./src",
 		"./test",
 		"./test/jest.setup.ts"
+	],
+	"files": [
+		"global.d.ts"
 	]
 }

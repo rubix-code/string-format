@@ -75,7 +75,7 @@ function create(regex: RegExp, transformers: { [x: string]: (arg0: any) => any; 
 
 				if (transformerName == null) {
 					return value
-				} else if (Object.hasOwn(transformers, transformerName)) {
+				} else if (transformers.hasOwnProperty(transformerName)) {
 					const transformer = transformers[transformerName];
 					if(typeof transformer !== "function") throw Error("transformer must be a function which takes a single argument.");
 					return transformer(value)
