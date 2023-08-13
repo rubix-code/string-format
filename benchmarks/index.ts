@@ -1,0 +1,5 @@
+import "./formatters/CStyleFormatter.benchmark"
+import "./formatters/PyStyleFormatter.benchmark"
+import "./StringFormat.benchmark"
+import "./formatter-order/C-Py.benchmark"
+import "./formatter-order/Py-C.benchmark"
