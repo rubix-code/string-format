@@ -1,4 +1,4 @@
-import { Assert } from "@/util/assert-util"
+import { isString } from "@/util/assert-util"
 import { IStringFormatParser, StringFormatParam, IStringFormatter, TStringTransformer } from "../StringFormat"
 
 const TypeErrors = {
@@ -388,7 +388,7 @@ export default class CStyleFormatter implements IStringFormatter {
 	 * @since 0.1.0
 	 */
 	public removeFormatParser(formatParserName: string): void {
-		Assert.isString("formatParserName", formatParserName)
+		isString("formatParserName", formatParserName)
 		if (!this.formatParsers.has(formatParserName)) {
 			throw new Error(`Format parser ${formatParserName} does not exist`)
 		}
@@ -446,7 +446,7 @@ export default class CStyleFormatter implements IStringFormatter {
 	 * @throws {Error} if the input string is not a format string
 	 */
 	public format(input: string, ...params: any[]): [boolean, string] {
-		Assert.isString("input", input)
+		isString("input", input)
 		let formatted: boolean = false
 		let formattedString: string = input
 

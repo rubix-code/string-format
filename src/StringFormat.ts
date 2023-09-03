@@ -1,5 +1,5 @@
 import { Class } from "type-fest"
-import { Assert } from "@/util/assert-util"
+import { isString } from "./util/assert-util"
 
 /**
  * String format parameters
@@ -231,7 +231,7 @@ export class StringFormat {
 	 * @since 0.1.0
 	 */
 	public removeFormatter(identifier: string): void {
-		Assert.isString("identifier", identifier)
+		isString("identifier", identifier)
 		if (!this.formatters.has(identifier)) {
 			throw new Error(`Formatter '${identifier}' does not exist`)
 		}
