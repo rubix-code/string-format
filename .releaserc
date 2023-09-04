@@ -4,9 +4,26 @@
 	],
 	"plugins": [
 		"@semantic-release/commit-analyzer",
-		["@semantic-release/release-notes-generator", {
-			"presets": "eslint"
-		}],
+		[
+			"@semantic-release/release-notes-generator",
+			{
+				"preset": "custom",
+				"releaseRules": [
+					{
+						"tag": "Fix",
+						"release": "patch"
+					},
+					{
+						"tag": "New",
+						"release": "minor"
+					},
+					{
+						"tag": "Update",
+						"release": "patch"
+					}
+				]
+			}
+		],
 		"@semantic-release/github",
 		"@semantic-release/npm",
 		"@semantic-release/changelog",
