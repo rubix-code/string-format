@@ -1,4 +1,8 @@
 # String-Format
+[![semantic-release: eslint](https://img.shields.io/badge/semantic--release-eslint-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+[![codecov](https://codecov.io/gh/rubix-code/string-format/graph/badge.svg?token=0CM91KRJW6)](https://codecov.io/gh/rubix-code/string-format)
+[![npm version](https://badge.fury.io/js/%40rubix-code%2Fstring-format.svg)](https://badge.fury.io/js/%40rubix-code%2Fstring-format)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Highly functional and extensible string formatting library for JS.
 
