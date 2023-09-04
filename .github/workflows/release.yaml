@@ -28,9 +28,6 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        with:
-          name: coverage-report
-          path: coverage/
 
       - name: Semantic Release
         run: npx semantic-release
