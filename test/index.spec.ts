@@ -1,4 +1,4 @@
-import formatter from "@/index"
+import formatter from "@/register"
 
 @Describe("global string.format")
 export class GlobalStringFormatTest {
