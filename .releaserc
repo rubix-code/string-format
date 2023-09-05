@@ -34,9 +34,14 @@
 				}
 			}
 		],
-		"@semantic-release/github",
-		"@semantic-release/npm",
 		"@semantic-release/changelog",
+		[
+			"@semantic-release/npm",
+			{
+				"pkgRoot": "dist"
+			}
+		],
+		"@semantic-release/github",
 		"@semantic-release/git"
 	]
 }

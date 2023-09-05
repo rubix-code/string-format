@@ -25,7 +25,7 @@ npm install @rubix-code/string-format
 ### Basic Usage
 ```ts
 // Globally apply the default formatters
-import "@rubix-code/string-format";
+import "@rubix-code/string-format/register";
 
 // Python style formatting
 "My name is {name}".format({ name: "Slim Shady" }); // My name is Slim Shady
