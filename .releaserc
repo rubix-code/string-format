@@ -7,19 +7,31 @@
 		[
 			"@semantic-release/release-notes-generator",
 			{
-				"preset": "custom",
+				"preset": "eslint",
 				"releaseRules": [
 					{
-						"tag": "Fix",
+						"message": "Fix",
 						"release": "patch"
 					},
 					{
-						"tag": "New",
+						"message": "Fixed",
+						"release": "patch"
+					},
+					{
+						"message": "Update",
+						"release": "patch"
+					},
+					{
+						"message": "New",
 						"release": "minor"
 					},
 					{
-						"tag": "Update",
-						"release": "patch"
+						"message": "Added",
+						"release": "minor"
+					},
+					{
+						"message": "Breaking",
+						"release": "major"
 					}
 				]
 			}
