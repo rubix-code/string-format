@@ -3,37 +3,35 @@
 		"main"
 	],
 	"plugins": [
-		"@semantic-release/commit-analyzer",
 		[
-			"@semantic-release/release-notes-generator",
+			"@semantic-release/commit-analyzer",
 			{
 				"preset": "eslint",
 				"releaseRules": [
 					{
-						"message": "Fix",
+						"message": "Patched",
 						"release": "patch"
-					},
-					{
-						"message": "Fixed",
-						"release": "patch"
-					},
-					{
-						"message": "Update",
-						"release": "patch"
-					},
-					{
-						"message": "New",
-						"release": "minor"
-					},
-					{
-						"message": "Added",
-						"release": "minor"
-					},
-					{
-						"message": "Breaking",
-						"release": "major"
 					}
 				]
+			}
+		],
+		[
+			"@semantic-release/release-notes-generator",
+			{
+				"preset": "eslint",
+				"parserOpts": {
+					"noteKeywords": [
+						"BREAKING CHANGE",
+						"BREAKING CHANGES",
+						"BREAKING"
+					]
+				},
+				"writerOpts": {
+					"commitsSort": [
+						"subject",
+						"scope"
+					]
+				}
 			}
 		],
 		"@semantic-release/github",
