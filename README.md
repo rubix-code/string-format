@@ -33,3 +33,7 @@ import "@rubix-code/string-format/register";
 // C++ style formatting
 "The answer to life, the universe and everything is %d".format(42); // The answer to life, the universe and everything is 42
 ```
+
+## TODO:
+[ ] Fix CI/CD pipeline
+[ ] Add complete documentation
