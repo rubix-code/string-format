@@ -3,9 +3,14 @@
 	"version": "0.1.0",
 	"description": "An extensible string formatter for Node.js",
 	"main": "dist/index.js",
+	"files": [
+		"dist",
+		"README.md",
+		"changelog.md"
+	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/rubix-code/string-format"
+		"url": "git+https://github.com/rubix-code/string-format.git"
 	},
 	"scripts": {
 		"dev": "ts-node-dev -r tsconfig-paths/register src/index.ts",
@@ -14,9 +19,9 @@
 		"benchmark": "ts-node-dev -r tsconfig-paths/register benchmarks/index.ts"
 	},
 	"keywords": [
-		"cron"
+		"string", "format", "util", "string-format", "python-string", "cpp-string"
 	],
-	"author": "Rinzler D. Vicky",
+	"author": "Rubixcode",
 	"license": "MIT",
 	"devDependencies": {
 		"@jest-decorated/core": "^0.1.7",
