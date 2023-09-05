@@ -35,5 +35,5 @@ import "@rubix-code/string-format/register";
 ```
 
 ## TODO:
-[ ] Fix CI/CD pipeline
-[ ] Add complete documentation
+- [ ] Fix CI/CD pipeline
+- [ ] Add complete documentation
