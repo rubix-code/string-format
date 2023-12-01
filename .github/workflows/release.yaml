@@ -29,6 +29,9 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
+      - name: Build
+        run: npm run build
+
       - name: Semantic Release
         run: npx semantic-release
         env:
